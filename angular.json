@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "quote"
+    }
+  },
+  "defaultProject": "quote",
+  "cli": {
+    "analytics": false
+  }
 }
