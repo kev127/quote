@@ -1,1 +1,23 @@
-<p>quote-detail works!</p>
+<div class="container">
+    <div>
+        <p>{{quote.author}}</p>
+        <p>posted {{quote.completeDate|dateCount}} days ago </p>
+        <p>{{quote.poster}}</p>
+        <div class="row">
+            <div class="col-3">
+                <span (click)='quoteDelete(true)'><i class="fa fa-trash trash"></i></span>
+            </div>
+
+            <div class="col-3">
+
+                <p>{{upvotesNumber}}</p>
+                <span (click)='upvote()'><i class="fa fa-thumbs-up like"></i></span>
+            </div>
+
+            <div class="col-3">
+                <p>{{downvoteNumber}}</p>
+                <span (click)='downvote()'><i class="fa fa-thumbs-down unlike"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
