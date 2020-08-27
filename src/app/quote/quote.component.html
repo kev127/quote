@@ -5,7 +5,7 @@
       <div class="col-md-6">
         <div *ngFor='let quote of quotes;let i = index' class="">
           <p class="para"><i class="fas fa-quote-left"> </i> {{quote.text}} <br> posted on {{quote.completeDate|date|uppercase}}</p>
-          <app-quote-detail [quote]='quote' (isComplete)=deleteQuote($event,i)></app-quote-detail>
+          <app-quote-detail [quote]='Quote' (isComplete)=deleteQuote($event,i)></app-quote-detail>
         </div>
       </div>
       <div class="col-md-6">

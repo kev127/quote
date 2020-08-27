@@ -10,6 +10,7 @@ export class CarouselComponent implements OnInit {
 
   constructor() { }
 
+  import :[NgbModule,]
   ngOnInit(): void {
   }
 
